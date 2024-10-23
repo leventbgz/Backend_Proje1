@@ -23,7 +23,6 @@ public class Main {
         // If isBarking false, the method returns false as well.
         return false;
     }
-    }
 
     public static boolean hasTeen(int firstAge, int secondAge, int thirdAge) {
         // If any of the int variables are between 13-19, it returns true.
@@ -48,10 +47,16 @@ public class Main {
 
 
     public static double area(double width, double height) {
-       
+       if (width<0 || height<0 ) {
+           return -1;
+       }
+        return width * height;
     }
 
     public static double area(double radius) {
-       
+        if (radius<0 ) {
+            return -1;
+        }
+        return radius * radius * Math.PI;
     }
 }
